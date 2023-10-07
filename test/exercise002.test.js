@@ -7,7 +7,7 @@ import {
 } from '../challenges/exercise002';
 
 describe('getFillings', () => {
-    test.skip('returns the fillings of a sandwich', () => {
+    test('returns the fillings of a sandwich', () => {
         const sandwich = {
             bread: 'Sourdough',
             fillings: ['brie', 'relish', 'lettuce'],
@@ -25,7 +25,7 @@ describe('getFillings', () => {
 });
 
 describe('isFromManchester', () => {
-    test.skip('returns true if the person is from Manchester', () => {
+    test('returns true if the person is from Manchester', () => {
         const person = {
             name: 'Mohammed',
             city: 'Manchester',
@@ -34,7 +34,7 @@ describe('isFromManchester', () => {
         expect(isFromManchester(person)).toBe(true);
     });
 
-    test.skip('returns false if the person is not Manchester', () => {
+    test('returns false if the person is not Manchester', () => {
         const person = {
             name: 'Anisa',
             city: 'Leeds',
@@ -46,7 +46,7 @@ describe('isFromManchester', () => {
 
 describe('getBusNumbers', () => {
     // A bus can hold 40 people. This function should return how many buses are required for the number of people
-    test.skip('returns 1 if all the people fit in 1 bus', () => {
+    test('returns 1 if all the people fit in 1 bus', () => {
         expect(getBusNumbers(1)).toBe(1);
         expect(getBusNumbers(10)).toBe(1);
         expect(getBusNumbers(25)).toBe(1);
@@ -54,42 +54,42 @@ describe('getBusNumbers', () => {
         expect(getBusNumbers(40)).toBe(1);
     });
 
-    test.skip('returns 2 if 2 buses are required', () => {
+    test('returns 2 if 2 buses are required', () => {
         expect(getBusNumbers(41)).toBe(2);
         expect(getBusNumbers(50)).toBe(2);
         expect(getBusNumbers(55)).toBe(2);
         expect(getBusNumbers(80)).toBe(2);
     });
 
-    test.skip('returns 3 if 3 buses are required', () => {
+    test('returns 3 if 3 buses are required', () => {
         expect(getBusNumbers(81)).toBe(3);
         expect(getBusNumbers(85)).toBe(3);
         expect(getBusNumbers(100)).toBe(3);
         expect(getBusNumbers(120)).toBe(3);
     });
 
-    test.skip('returns the correct number of buses for larger numbers of people', () => {
+    test('returns the correct number of buses for larger numbers of people', () => {
         expect(getBusNumbers(43728)).toBe(1094);
     });
 });
 
 describe('countSheep', () => {
-    test.skip('returns 0 if there are 0 sheep in the array', () => {
+    test('returns 0 if there are 0 sheep in the array', () => {
         const arr = ['dog', 'badger', 'dog', 'dog', 'chicken'];
         expect(countSheep(arr)).toBe(0);
     });
 
-    test.skip('returns 1 if there is 1 sheep in the array', () => {
+    test('returns 1 if there is 1 sheep in the array', () => {
         const arr = ['dog', 'sheep', 'dog', 'dog', 'chicken'];
         expect(countSheep(arr)).toBe(1);
     });
 
-    test.skip('returns 2 if there are 2 sheep in the array', () => {
+    test('returns 2 if there are 2 sheep in the array', () => {
         const arr = ['dog', 'sheep', 'dog', 'sheep', 'chicken'];
         expect(countSheep(arr)).toBe(2);
     });
 
-    test.skip('returns 5 if there are 5 sheep in the array', () => {
+    test('returns 5 if there are 5 sheep in the array', () => {
         const arr = [
             'dog',
             'sheep',
@@ -106,7 +106,7 @@ describe('countSheep', () => {
 });
 
 describe('hasMPostCode', () => {
-    test.skip('returns true if the person has a postcode starting with M', () => {
+    test('returns true if the person has a postcode starting with M', () => {
         const person = {
             name: 'Mohammed',
             age: 23,
@@ -119,7 +119,7 @@ describe('hasMPostCode', () => {
         expect(hasMPostCode(person)).toBe(true);
     });
 
-    test.skip('returns false if the person does not have a postcode starting with M', () => {
+    test('returns false if the person does not have a postcode starting with M', () => {
         const person = {
             name: 'Anisa',
             age: 39,
@@ -132,7 +132,7 @@ describe('hasMPostCode', () => {
         expect(hasMPostCode(person)).toBe(false);
     });
 
-    test.skip('returns false if the postcode starts with M but is not for Manchester', () => {
+    test('returns false if the postcode starts with M but is not for Manchester', () => {
         const person = {
             name: 'Jahin',
             age: 55,
