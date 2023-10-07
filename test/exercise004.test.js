@@ -10,7 +10,7 @@ import {
 } from "../challenges/exercise004";
 
 describe("findSmallNums", () => {
-    test.skip("returns an array of numbers smaller than 1", () => {
+    test("returns an array of numbers smaller than 1", () => {
         expect(findSmallNums([8, 1, 1.3, 0.9, 0.4, -1])).toEqual([0.9, 0.4, -1]);
         expect(findSmallNums([-7, -243])).toEqual([-7, -243]);
         expect(findSmallNums([100, 88])).toEqual([]);
@@ -19,7 +19,7 @@ describe("findSmallNums", () => {
 });
 
 describe("findNamesBeginningWith", () => {
-    test.skip("returns an array of names beginning with the specified character", () => {
+    test("returns an array of names beginning with the specified character", () => {
         const names = ["Sally", "Dave", "Susan", "Geoff", "Riley", "Sam"];
         expect(findNamesBeginningWith(names, "S")).toEqual([
             "Sally",
@@ -32,7 +32,7 @@ describe("findNamesBeginningWith", () => {
 });
 
 describe("findVerbs", () => {
-    test.skip("returns an array of words that are considered verbs (because they begin with 'to ')", () => {
+    test("returns an array of words that are considered verbs (because they begin with 'to ')", () => {
         const words = [
             "to eat",
             "fajita",
@@ -45,7 +45,7 @@ describe("findVerbs", () => {
         expect(findVerbs(["bottle", "fish", "grain"])).toEqual([]);
     });
 
-    test.skip("does not mistake words that include 'to' elsewhere", () => {
+    test("does not mistake words that include 'to' elsewhere", () => {
         const words = [
             "to eat",
             "tower",
@@ -59,7 +59,7 @@ describe("findVerbs", () => {
 });
 
 describe("getIntegers", () => {
-    test.skip("returns an array containing only integers", () => {
+    test("returns an array containing only integers", () => {
         const nums = [1, 3.5, 2.1, 1, 4, 9];
         expect(getIntegers(nums)).toEqual([1, 1, 4, 9]);
         expect(getIntegers([])).toEqual([]);
@@ -68,7 +68,7 @@ describe("getIntegers", () => {
 });
 
 describe("getCities", () => {
-    test.skip("returns an array of the cities of each user", () => {
+    test("returns an array of the cities of each user", () => {
         const users = [
             {
                 id: 12,
@@ -112,7 +112,7 @@ describe("getCities", () => {
 });
 
 describe("getSquareRoots", () => {
-    test.skip("gets the square root of each number to 2 decimal places", () => {
+    test("gets the square root of each number to 2 decimal places", () => {
         const nums = [36, 77, 12, 355, 92, 5];
         expect(getSquareRoots(nums)).toEqual([6, 8.77, 3.46, 18.84, 9.59, 2.24]);
     });
@@ -132,7 +132,7 @@ describe("findSentencesContaining", () => {
         "The bugs field should hold the url to your project’s issue tracker and / or the email address to which issues should be reported.",
     ];
 
-    test.skip("returns only the sentences containing the specified string", () => {
+    test("returns only the sentences containing the specified string", () => {
         expect(
             findSentencesContaining(sentencesAboutPackageJson, "license")
         ).toEqual([
@@ -144,7 +144,7 @@ describe("findSentencesContaining", () => {
         ).toEqual([]);
     });
 
-    test.skip("it should not be case sensitive", () => {
+    test("it should not be case sensitive", () => {
         expect(
             findSentencesContaining(sentencesAboutPackageJson, "dependencies")
         ).toEqual([
@@ -155,7 +155,7 @@ describe("findSentencesContaining", () => {
 });
 
 describe("getLongestSides", () => {
-    test.skip("returns the longest side of each set of triangle data", () => {
+    test("returns the longest side of each set of triangle data", () => {
         const data = [
             [6, 7, 10],
             [9, 3, 6],
