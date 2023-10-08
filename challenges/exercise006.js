@@ -1,4 +1,4 @@
-/* 
+/*
 ⚠️
 ⚠️ See exercise006.md - this time you have to write your own tests! ⚠️
 ⚠️
@@ -12,6 +12,15 @@
  */
 export const sumMultiples = (arr) => {
 	if (arr === undefined) throw new Error('arr is required');
+	let sum = 0;
+	for (let index = 0; index < arr.length; index++) {
+		const element = arr[index];
+		if (element % 3 == 0 || element % 5 == 0) {
+			sum += element
+		}
+	}
+
+	return sum;
 };
 
 /**
@@ -21,6 +30,12 @@ export const sumMultiples = (arr) => {
  */
 export const isValidDNA = (str) => {
 	if (str === undefined) throw new Error('str is required');
+	// C, G, T or A only.
+	if (str === 'C' || str === 'G' || str === 'T' || str === 'A') {
+		return true
+	} else {
+		return false
+	}
 };
 
 /**
@@ -30,6 +45,28 @@ export const isValidDNA = (str) => {
  */
 export const getComplementaryDNA = (str) => {
 	if (str === undefined) throw new Error('str is required');
+	const array = [];
+	// T always pairs with A, and C always pairs with G
+	for (let index = 0; index < str.length; index++) {
+		const element = str[index];
+		switch (element) {
+			case "T":
+				array.push("A")
+				break;
+			case "A":
+				array.push("T")
+				break;
+			case "C":
+				array.push("G")
+				break;
+			case "G":
+				array.push("C")
+				break;
+			default:
+				break;
+		}
+	}
+	return array.join("");
 };
 
 /**
