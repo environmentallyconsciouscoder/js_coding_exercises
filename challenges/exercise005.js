@@ -124,13 +124,13 @@ export const getWordFrequencies = (str) => {
 	const string = str.split(' ');
 	const obj = {};
 	for (let i = 0; i < string.length; i++) {
-		const stringAsLowerCase = string[i].toLowerCase().replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g, "")
+		const stringAsLowerCase = string[i].toLowerCase().replace(/[.,#!?$%&;:{}=\-_`~()]/g, "")
 
 		if (obj[stringAsLowerCase] !== undefined) {
 			obj[stringAsLowerCase] += 1;
 		} else {
 			obj[stringAsLowerCase] = 1;
 		}
-	};
-	return obj;
+	}
+	return obj
 };
