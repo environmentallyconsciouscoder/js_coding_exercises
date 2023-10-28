@@ -15,7 +15,7 @@ export const sumMultiples = (arr) => {
 	let sum = 0;
 	for (let index = 0; index < arr.length; index++) {
 		const element = arr[index];
-		if (element % 3 == 0 || element % 5 == 0) {
+		if (element % 3 === 0 || element % 5 === 0) {
 			sum += element
 		}
 	}

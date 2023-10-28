@@ -34,7 +34,7 @@ export const count1sand0s = (str) => {
 	for (let index = 0; index < str.length; index++) {
 		const element = str[index];
 
-		if (element == 1) {
+		if (parseInt(element) === 1) {
 			onesOrZeros[1] += 1
 		} else {
 			onesOrZeros[0] += 1
@@ -71,7 +71,7 @@ export const sumArrays = (arrs) => {
 export const arrShift = (arr) => {
 	if (arr === undefined) throw new Error('arr is required');
 	// Your code here!
-	if (arr.length == 1) {
+	if (arr.length === 1) {
 		return arr;
 	} else {
 		const lastElement = arr[arr.length - 1];

@@ -3,11 +3,11 @@
 export function camelCaseWords(words) {
 	if (words === undefined) throw new Error('words is required');
 	// Your code here!
-	if (words.length == 1) {
+	if (words.length === 1) {
 		return words[0]
 	} else {
 		let list = words.map((word, index) => {
-			if (index == 0) {
+			if (index === 0) {
 				return words[index];
 			} else {
 				return words[index][0].toUpperCase() + words[index].slice(1);
@@ -20,7 +20,7 @@ export function camelCaseWords(words) {
 export function getSquares(nums) {
 	if (nums === undefined) throw new Error('nums is required');
 	// Your code here!
-	if (nums.length == 0) {
+	if (nums.length === 0) {
 		return nums
 	} else {
 		return nums.map((num) => {
